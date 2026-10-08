@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexPlay — Next-Gen Digital Game Marketplace</title>
+  <meta name="description" content="Discover, buy, and download the latest AAA and indie games on NexPlay. Modern gaming store with flash deals and weekly free games.">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= TOP TICKER / NOTIFICATION ================= -->
+  <aside class="top-announcement" aria-label="Special announcement">
+    <div class="container announcement-content">
+      <span class="badge-pulse">SPRING SALE LIVE</span>
+      <p>Save up to <strong>85% OFF</strong> on over 2,500 blockbuster titles. Ends in 48 hours!</p>
+      <a href="#deals" class="announcement-link">Explore Deals &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="NexPlay Home">
+        <span class="logo-icon"><i class="fa-solid fa-gamepad"></i></span>
+        <span class="logo-text">NEX<span>PLAY</span></span>
+      </a>
+
+      <!-- Primary Navigation with Pure CSS Dropdowns -->
+      <nav class="main-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link active">Store <i class="fa-solid fa-chevron-down arrow-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#featured"><i class="fa-solid fa-star"></i> Featured & Recommended</a></li>
+              <li><a href="#deals"><i class="fa-solid fa-percent"></i> Great Deals & Discounts</a></li>
+              <li><a href="#free-games"><i class="fa-solid fa-gift"></i> Free Games of the Week</a></li>
+              <li><a href="#store-tabs"><i class="fa-solid fa-fire"></i> Top Sellers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#store-tabs" class="nav-link">Discover <i class="fa-solid fa-chevron-down arrow-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa-solid fa-compass"></i> Discovery Queue</a></li>
+              <li><a href="#"><i class="fa-solid fa-bullhorn"></i> New Releases</a></li>
+              <li><a href="#"><i class="fa-solid fa-calendar-check"></i> Coming Soon</a></li>
+              <li><a href="#"><i class="fa-solid fa-award"></i> Award Winners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#categories" class="nav-link">Categories <i class="fa-solid fa-chevron-down arrow-icon"></i></a>
+            <ul class="dropdown-menu grid-dropdown">
+              <li><a href="#"><i class="fa-solid fa-crosshairs"></i> Action & Shooter</a></li>
+              <li><a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i> RPG & Fantasy</a></li>
+              <li><a href="#"><i class="fa-solid fa-robot"></i> Cyberpunk & Sci-Fi</a></li>
+              <li><a href="#"><i class="fa-solid fa-car-side"></i> Racing & Sim</a></li>
+              <li><a href="#"><i class="fa-solid fa-chess"></i> Strategy & Tactics</a></li>
+              <li><a href="#"><i class="fa-solid fa-ghost"></i> Survival & Horror</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#deals" class="nav-link special-tag">Deals</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#free-games" class="nav-link">Free Games</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#community" class="nav-link">Community</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Prominent Search Bar (Steam/Epic inspired) -->
+      <div class="search-module">
+        <form class="search-form" action="#" method="get" role="search">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="search" name="q" placeholder="Search games, publishers, genres..." aria-label="Search Games">
+          <kbd class="search-shortcut">CTRL + K</kbd>
+        </form>
+      </div>
+
+      <!-- User Action Bar -->
+      <div class="header-actions">
+        <a href="#wishlist" class="action-btn" title="Wishlist" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="counter-badge">3</span>
+        </a>
+
+        <a href="#cart" class="action-btn" title="Cart" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="counter-badge cart-count">1</span>
+        </a>
+
+        <a href="#account" class="action-btn user-btn" title="Account" aria-label="Account">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="#download" class="btn btn-primary btn-sm launcher-btn">
+          <i class="fa-solid fa-download"></i>
+          <span>Get NexApp</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO FEATURED SHOWCASE ================= -->
+    <section class="hero-showcase" id="featured" aria-label="Featured Games">
+      <div class="container showcase-grid">
+        
+        <!-- Big Featured Showcase Banner -->
+        <article class="hero-spotlight">
+          <div class="spotlight-media">
+            <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/preorder/MW4-EDITIONS.BENEFITS-TOUT.jpg" alt="Call of Duty: Modern Warfare 4">
+            <div class="media-overlay"></div>
+          </div>
+          
+          <div class="spotlight-content">
+            <div class="tags-group">
+              <span class="tag tag-accent">FEATURED PREMIERE</span>
+              <span class="tag tag-platform"><i class="fa-brands fa-windows"></i> PC</span>
+              <span class="tag tag-platform"><i class="fa-solid fa-microchip"></i> RTX READY</span>
+            </div>
+            
+            <h1 class="spotlight-title">Call of Duty: Modern Warfare 4</h1>
+            <p class="spotlight-desc">Step into Neo-Veridia. Infiltrate rogue neural syndicates, wield high-tech particle arms, and rewrite humanity’s digital destiny in an epic open-world cyber-rpg.</p>
+            
+            <div class="spotlight-pricing">
+              <span class="discount-pill">-35%</span>
+              <div class="price-stack">
+                <del class="old-price">$69.99</del>
+                <ins class="current-price">$45.49</ins>
+              </div>
+              <div class="cta-actions">
+                <a href="#" class="btn btn-accent btn-glow"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
+                <a href="#" class="btn btn-outline"><i class="fa-regular fa-heart"></i> Add to Wishlist</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Right Side Quick Showcase List -->
+        <aside class="hero-rail" aria-label="Highlighted queue">
+          <h2 class="rail-heading"><i class="fa-solid fa-fire-flame-curved"></i> TRENDING NOW</h2>
+          
+          <ul class="rail-list">
+            <li class="rail-item active">
+              <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/preorder/MW4-EDITIONS.BENEFITS-TOUT.jpg" alt="Call of Duty: Modern Warfare 4">
+              <div class="rail-info">
+                <h4>Call of Duty: Modern Warfare 4</h4>
+                <div class="rail-meta">
+                  <span class="discount-tag">-35%</span>
+                  <span class="price">$45.49</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="rail-item">
+              <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/c0f0866161be038cc6607824505b0cb51cd12cf0/capsule_616x353.jpg?t=1789020763" alt="Crimson Desert">
+              <div class="rail-info">
+                <h4>Crimson Desert</h4>
+                <div class="rail-meta">
+                  <span class="discount-tag">-50%</span>
+                  <span class="price">$29.99</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="rail-item">
+              <img src="https://cdn1.epicgames.com/spt-assets/5013c0fbf0aa4a5e84d948ab5bfe99c6/stellar-blade-1sjsi.jpg" alt="Stellar Blade">
+              <div class="rail-info">
+                <h4>Stellar Blade</h4>
+                <div class="rail-meta">
+                  <span class="base-badge">Just Released</span>
+                  <span class="price">$59.99</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="rail-item">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/b3iB2zf2xHj9shC0XDTULxND.png" alt="Ghost of Tsushima">
+              <div class="rail-info">
+                <h4>Ghost of Tsushima</h4>
+                <div class="rail-meta">
+                  <span class="discount-tag">-70%</span>
+                  <span class="price">$11.99</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ================= SPECIAL DEALS & FLASH SALES ================= -->
+    <section class="section deals-section" id="deals">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-tag"><i class="fa-solid fa-bolt"></i> LIMITED TIME OFFER</div>
+            <h2 class="section-title">Spotlight Flash Deals</h2>
+          </div>
+          <div class="deal-timer" aria-label="Offer ends in">
+            <span class="timer-label"><i class="fa-regular fa-clock"></i> Closes In:</span>
+            <span class="timer-boxes">
+              <strong>23</strong>h : <strong>42</strong>m : <strong>19</strong>s
+            </span>
+          </div>
+        </div>
+
+        <div class="deals-grid">
+          
+          <!-- Deal Card 1 -->
+          <article class="deal-card">
+            <div class="card-thumb">
+              <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1762888662" alt="Sekiro: Shadow Die Twice">
+              <span class="deal-badge">-65%</span>
+              <button class="quick-wish" title="Save to wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="platform-icons">
+                <i class="fa-brands fa-windows" title="Windows"></i>
+                <i class="fa-brands fa-apple" title="macOS"></i>
+                <i class="fa-brands fa-steam" title="Steam Deck Compatible"></i>
+              </div>
+              <h3 class="card-title"><a href="#">Sekiro: Shadow Die Twice</a></h3>
+              <p class="genre-list">Action • Adventure • Singleplayer</p>
+              <div class="card-footer">
+                <div class="discount-box">-65%</div>
+                <div class="pricing">
+                  <del>$49.99</del>
+                  <span class="current">$17.49</span>
+                </div>
+                <button class="cart-add-btn" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Deal Card 2 -->
+          <article class="deal-card">
+            <div class="card-thumb">
+              <img src="https://image.api.playstation.com/vulcan/ap/rnd/202407/1005/236cb97b208cdb7c7ac83d252cb563cf7985fabe4baaa4b7.jpg" alt="Rise of the Ronin">
+              <span class="deal-badge">-50%</span>
+              <button class="quick-wish" title="Save to wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="platform-icons">
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-playstation"></i>
+              </div>
+              <h3 class="card-title"><a href="#">Rise of the Ronin</a></h3>
+              <p class="genre-list">Soulslike • Action RPG • Dark</p>
+              <div class="card-footer">
+                <div class="discount-box">-50%</div>
+                <div class="pricing">
+                  <del>$59.99</del>
+                  <span class="current">$29.99</span>
+                </div>
+                <button class="cart-add-btn" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Deal Card 3 -->
+          <article class="deal-card">
+            <div class="card-thumb">
+              <img src="https://cdn.mos.cms.futurecdn.net/q7xr9MFtzkawjk5ZyGCQnP.jpg" alt="Hitman 3">
+              <span class="deal-badge">-80%</span>
+              <button class="quick-wish" title="Save to wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="platform-icons">
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-linux"></i>
+              </div>
+              <h3 class="card-title"><a href="#">Hitman 3</a></h3>
+              <p class="genre-list">Stealth • Action • Singleplayer</p>
+              <div class="card-footer">
+                <div class="discount-box">-80%</div>
+                <div class="pricing">
+                  <del>$39.99</del>
+                  <span class="current">$7.99</span>
+                </div>
+                <button class="cart-add-btn" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Deal Card 4 -->
+          <article class="deal-card">
+            <div class="card-thumb">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSam3IhZq0Goq44po2nE4mSzWrkjtz1IVAUW5tIKyN-Z4v6DuimF5rAqzA&s=10" alt="Grand Theft Auto 6">
+              <span class="deal-badge">-40%</span>
+              <button class="quick-wish" title="Save to wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="platform-icons">
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-apple"></i>
+              </div>
+              <h3 class="card-title"><a href="#">Grand Theft Auto 6</a></h3>
+              <p class="genre-list">Action • Adventure • Singleplayer</p>
+              <div class="card-footer">
+                <div class="discount-box">-40%</div>
+                <div class="pricing">
+                  <del>$44.99</del>
+                  <span class="current">$26.99</span>
+                </div>
+                <button class="cart-add-btn" aria-label="Add to cart"><i class="fa-solid fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EPIC-STYLE FREE GAMES SPOTLIGHT ================= -->
+    <section class="section free-games-section" id="free-games">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-tag cyan-tag"><i class="fa-solid fa-gift"></i> WEEKLY VAULT</div>
+            <h2 class="section-title">Free Games This Week</h2>
+          </div>
+          <a href="#" class="view-all-link">View Vault History &rarr;</a>
+        </div>
+
+        <div class="free-games-grid">
+          
+          <!-- Free Game 1: Live Now -->
+          <article class="free-card live-free">
+            <div class="free-thumb">
+              <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Red Dead Redemption 2">
+              <div class="free-pill live">FREE NOW</div>
+            </div>
+            <div class="free-content">
+              <h3 class="free-title">Red Dead Redemption 2</h3>
+              <p class="free-desc">Claim forever! Beautiful isometric sci-fi puzzle exploration through crystalline planetary rings.</p>
+              <div class="free-timeline">
+                <span>Free until <strong>Thursday at 11:00 AM</strong></span>
+              </div>
+              <a href="#" class="btn btn-cyan btn-full">Claim for Free</a>
+            </div>
+          </article>
+
+          <!-- Free Game 2: Next Week -->
+          <article class="free-card upcoming-free">
+            <div class="free-thumb">
+              <img src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5" alt="Cyberpunk 2077">
+              <div class="free-pill upcoming">UNLOCKING OCT 15</div>
+            </div>
+            <div class="free-content">
+              <h3 class="free-title">Cyberpunk 2077</h3>
+              <p class="free-desc">Coming to the vault next week. Fast-paced rogue-lite deckbuilder with relentless mechanical hordes.</p>
+              <div class="free-timeline">
+                <span>Unlocks <strong>Oct 15 - Oct 22</strong></span>
+              </div>
+              <button class="btn btn-outline btn-full" disabled><i class="fa-regular fa-bell"></i> Notify Me</button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= BROWSE BY CATEGORY / GENRE ================= -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        
+        <div class="section-header center">
+          <div class="section-tag"><i class="fa-solid fa-layer-group"></i> DIVERSE WORLDS</div>
+          <h2 class="section-title">Browse By Popular Genres</h2>
+          <p class="section-subtitle">Dive into hand-curated collections across thousands of gaming categories.</p>
+        </div>
+
+        <div class="categories-grid">
+          
+          <a href="#" class="genre-card genre-cyber">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-robot genre-icon"></i>
+            <h3>Cyberpunk</h3>
+            <span>420+ Titles</span>
+          </a>
+
+          <a href="#" class="genre-card genre-rpg">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-dragon genre-icon"></i>
+            <h3>Action RPG</h3>
+            <span>890+ Titles</span>
+          </a>
+
+          <a href="#" class="genre-card genre-fps">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-crosshairs genre-icon"></i>
+            <h3>FPS & Shooter</h3>
+            <span>610+ Titles</span>
+          </a>
+
+          <a href="#" class="genre-card genre-horror">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-ghost genre-icon"></i>
+            <h3>Survival Horror</h3>
+            <span>340+ Titles</span>
+          </a>
+
+          <a href="#" class="genre-card genre-sim">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-gauge-high genre-icon"></i>
+            <h3>Racing & Sim</h3>
+            <span>280+ Titles</span>
+          </a>
+
+          <a href="#" class="genre-card genre-indie">
+            <div class="genre-glow"></div>
+            <i class="fa-solid fa-shapes genre-icon"></i>
+            <h3>Indie Gems</h3>
+            <span>1,200+ Titles</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= TABBED MARKETPLACE (PURE CSS TABS) ================= -->
+    <section class="section marketplace-tabs" id="store-tabs">
+      <div class="container">
+        
+        <!-- Tab Controllers (CSS Radio Input Hack) -->
+        <input type="radio" name="store_tab" id="tab-sellers" class="tab-radio" checked>
+        <input type="radio" name="store_tab" id="tab-releases" class="tab-radio">
+        <input type="radio" name="store_tab" id="tab-upcoming" class="tab-radio">
+
+        <!-- Navigation Tab Headers -->
+        <div class="tabs-header-bar">
+          <div class="tab-controls">
+            <label for="tab-sellers" class="tab-label label-sellers"><i class="fa-solid fa-fire"></i> Top Sellers</label>
+            <label for="tab-releases" class="tab-label label-releases"><i class="fa-solid fa-sparkles"></i> New Releases</label>
+            <label for="tab-upcoming" class="tab-label label-upcoming"><i class="fa-solid fa-calendar-day"></i> Anticipated</label>
+          </div>
+          <a href="#" class="btn btn-outline btn-sm">See Full Catalog &rarr;</a>
+        </div>
+
+        <!-- Tab 1: Top Sellers List -->
+        <div class="tab-content content-sellers">
+          <ul class="store-row-list">
+            
+            <li class="store-row">
+              <span class="rank-number">01</span>
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=160&q=80" alt="Call of Duty: Modern Warfare 4">
+              <div class="row-details">
+                <h4>Call of Duty: Modern Warfare 4</h4>
+                <div class="tags"><span class="badge-mini">Action</span><span class="badge-mini">Open World</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i></div>
+              <div class="row-discount">-35%</div>
+              <div class="row-price">
+                <del>$69.99</del>
+                <strong>$45.49</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+
+            <li class="store-row">
+              <span class="rank-number">02</span>
+              <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=160&q=80" alt="Chronicles of Eldoria">
+              <div class="row-details">
+                <h4>Chronicles of Eldoria: Definitive</h4>
+                <div class="tags"><span class="badge-mini">RPG</span><span class="badge-mini">Dark Fantasy</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i> <i class="fa-brands fa-apple"></i></div>
+              <div class="row-discount">-50%</div>
+              <div class="row-price">
+                <del>$59.99</del>
+                <strong>$29.99</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+
+            <li class="store-row">
+              <span class="rank-number">03</span>
+              <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=160&q=80" alt="Stellar Abyss">
+              <div class="row-details">
+                <h4>Stellar Abyss: Beyond Deep Space</h4>
+                <div class="tags"><span class="badge-mini">Space</span><span class="badge-mini">Sci-Fi</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i></div>
+              <div class="row-discount blank">—</div>
+              <div class="row-price">
+                <strong>$59.99</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+
+            <li class="store-row">
+              <span class="rank-number">04</span>
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=160&q=80" alt="Neon Velocity">
+              <div class="row-details">
+                <h4>Neon Velocity: Apex Shift</h4>
+                <div class="tags"><span class="badge-mini">Racing</span><span class="badge-mini">PvP</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i> <i class="fa-brands fa-steam"></i></div>
+              <div class="row-discount">-65%</div>
+              <div class="row-price">
+                <del>$49.99</del>
+                <strong>$17.49</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Tab 2: New Releases List -->
+        <div class="tab-content content-releases">
+          <ul class="store-row-list">
+            <li class="store-row">
+              <span class="rank-number new-tag">NEW</span>
+              <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=160&q=80" alt="Ghost Velocity">
+              <div class="row-details">
+                <h4>Ghost Velocity Turbo</h4>
+                <div class="tags"><span class="badge-mini">Shooter</span><span class="badge-mini">Tactical</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i></div>
+              <div class="row-discount">-10%</div>
+              <div class="row-price">
+                <del>$39.99</del>
+                <strong>$35.99</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+
+            <li class="store-row">
+              <span class="rank-number new-tag">NEW</span>
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=160&q=80" alt="Vanguard Strike">
+              <div class="row-details">
+                <h4>Vanguard: Protocol Zeta</h4>
+                <div class="tags"><span class="badge-mini">Co-Op</span><span class="badge-mini">Sci-Fi</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i></div>
+              <div class="row-discount blank">—</div>
+              <div class="row-price">
+                <strong>$49.99</strong>
+              </div>
+              <a href="#" class="btn btn-sm btn-accent"><i class="fa-solid fa-cart-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab 3: Upcoming List -->
+        <div class="tab-content content-upcoming">
+          <ul class="store-row-list">
+            <li class="store-row">
+              <span class="rank-number soon-tag">SOON</span>
+              <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=160&q=80" alt="Cyberpunk Universe">
+              <div class="row-details">
+                <h4>Quantum Drift: 2099</h4>
+                <div class="tags"><span class="badge-mini">Simulation</span><span class="badge-mini">Futuristic</span></div>
+              </div>
+              <div class="row-platform"><i class="fa-brands fa-windows"></i></div>
+              <div class="row-discount blank">Q4 2026</div>
+              <div class="row-price">
+                <span class="pre-order-txt">Pre-Order Soon</span>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fa-regular fa-bell"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= APP LAUNCHER PROMO BANNER ================= -->
+    <section class="section launcher-cta-section" id="download">
+      <div class="container">
+        <div class="launcher-banner">
+          <div class="launcher-text">
+            <span class="badge-pulse">NEXPLAY CLIENT</span>
+            <h2>Elevate Your Gaming with NexPlay Launcher</h2>
+            <p>Seamless cloud saves, lightning-fast game updates, integrated party voice-chat, and low-overhead performance built from scratch for hardcore gamers.</p>
+            <div class="launcher-features">
+              <span><i class="fa-solid fa-bolt"></i> Fast P2P Downloads</span>
+              <span><i class="fa-solid fa-cloud"></i> Unlimited Cloud Saves</span>
+              <span><i class="fa-solid fa-shield-halved"></i> 100% DRM-Free Mode</span>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn btn-cyan btn-lg"><i class="fa-brands fa-windows"></i> Download For Windows</a>
+              <a href="#" class="btn btn-outline btn-lg"><i class="fa-brands fa-apple"></i> macOS & Linux</a>
+            </div>
+          </div>
+          <div class="launcher-visual">
+            <div class="device-mockup">
+              <i class="fa-solid fa-desktop mockup-icon"></i>
+              <div class="specs-tag">v3.4.1 • 64-Bit Ultra-Light</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMUNITY & ACTIVITY FEED ================= -->
+    <section class="section community-section" id="community">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-tag"><i class="fa-solid fa-users"></i> GAMER ECOSYSTEM</div>
+            <h2 class="section-title">Community Reviews & Hub</h2>
+          </div>
+          <a href="#" class="view-all-link">Visit Community Hub &rarr;</a>
+        </div>
+
+        <div class="community-grid">
+          
+          <article class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt="VortexPlayer">
+              </div>
+              <div class="reviewer-info">
+                <h4>VortexSniper</h4>
+                <div class="review-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span>Recommended</span>
+                </div>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              "Cyber Warfare Zero Horizon blew my expectations out of the water. The launcher downloaded it at an unprecedented 85 MB/s with zero stutter. Incredible marketplace."
+            </blockquote>
+            <span class="game-reviewed">Review for <strong>Cyber Warfare: Zero Horizon</strong></span>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=100&q=80" alt="Elena">
+              </div>
+              <div class="reviewer-info">
+                <h4>KiraBlade</h4>
+                <div class="review-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span>Recommended</span>
+                </div>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              "The weekly free games on NexPlay have saved me hundreds of dollars this year. Plus, cloud sync seamlessly restored my Eldoria saves on my laptop."
+            </blockquote>
+            <span class="game-reviewed">Review for <strong>NexPlay Vault Services</strong></span>
+          </article>
+
+          <article class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=100&q=80" alt="Marcus">
+              </div>
+              <div class="reviewer-info">
+                <h4>AeroGamer</h4>
+                <div class="review-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  <span>Recommended</span>
+                </div>
+              </div>
+            </div>
+            <blockquote class="review-text">
+              "The slick dark UI and lack of bloatware makes NexPlay my favorite alternative to Steam. Simple checkout, instant key delivery, no hassles."
+            </blockquote>
+            <span class="game-reviewed">Review for <strong>NexPlay Store UI</strong></span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <div class="footer-col brand-col">
+        <a href="#" class="brand-logo footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-gamepad"></i></span>
+          <span class="logo-text">NEX<span>PLAY</span></span>
+        </a>
+        <p class="footer-bio">NexPlay is the premiere destination for next-generation digital gaming. Built by gamers, powered by lightning-fast networks.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Reddit"><i class="fa-brands fa-reddit-alien"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Storefront</h4>
+        <ul>
+          <li><a href="#featured">Featured Titles</a></li>
+          <li><a href="#deals">Special Deals</a></li>
+          <li><a href="#free-games">Free Weekly Games</a></li>
+          <li><a href="#categories">Browse Genres</a></li>
+          <li><a href="#">NexPlay Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#download">Download Launcher</a></li>
+          <li><a href="#">Cloud Sync Status</a></li>
+          <li><a href="#">NexPlay Mobile App</a></li>
+          <li><a href="#">VR Support</a></li>
+          <li><a href="#">System Requirements</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Publishers</h4>
+        <ul>
+          <li><a href="#">Publish on NexPlay</a></li>
+          <li><a href="#">Developer Portal</a></li>
+          <li><a href="#">Revenue Share (88/12)</a></li>
+          <li><a href="#">NexPlay SDK Docs</a></li>
+          <li><a href="#">Brand Guidelines</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support & Legal</h4>
+        <ul>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Refund Policy (14 Days)</a></li>
+          <li><a href="#">Privacy Agreement</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Security & Anti-Cheat</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 NexPlay Interactive Inc. All trademarks and copyrighted games belong to their respective owners.</p>
+        <div class="payment-badges">
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
+          <i class="fa-brands fa-bitcoin" title="Bitcoin / Crypto Accepted"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
